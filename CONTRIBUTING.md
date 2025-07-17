@@ -100,6 +100,8 @@ graph TD;
 - 기능 추가: `feat/login-page`
 - 버그 수정: `fix/modal-close`
 - 문서 수정: `docs/readme`
+- 리팩토링: `refactor/user-hook`
+- UI/UX 개선: `ui/button-style`
 - 기타 작업: `chore/prettier`, `refactor/user-hook`
 
 ### ✔️ 커밋 메시지
