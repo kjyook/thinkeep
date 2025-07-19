@@ -6,9 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "openapi": "openapi-generator-cli generate -g typescript-fetch -i ./src/utils/thinkeep-api.yaml -o ./src/lib --additional-properties=supportsES6=true,useSingleRequestParameter=true"
   },
   "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.21.2",
     "next": "15.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0"
