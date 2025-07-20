@@ -20,3 +20,5 @@ export const BasicModal = ({ visible, close, title = 'test' }: BasicModalProps) 
     </div>
   );
 };
+
+export default BasicModal;
