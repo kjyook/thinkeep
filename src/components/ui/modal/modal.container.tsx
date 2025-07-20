@@ -9,7 +9,7 @@ import { useModalContext } from './modal.hooks';
 
 interface ModalOverlayProps extends OverlayOptions {
   closeSelf: () => void;
-  children: React.ReactElement;
+  children: React.ReactElement<any>;
 }
 
 export const ModalOverlay = ({
@@ -57,7 +57,7 @@ export const ModalOverlay = ({
         ${dim ? '' : ''}
         `}
     >
-      {cloneElement(children as any, { close: delayedClose, visible })}
+      {cloneElement(children, { close: delayedClose, visible })}
     </div>
   );
 };
