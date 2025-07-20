@@ -1,1 +1,3 @@
-export const ModalRegistry = {};
+export const ModalRegistry = {
+  Basic: () => import('./impls/basic-modal'),
+};
