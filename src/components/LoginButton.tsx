@@ -1,7 +1,7 @@
 'use client';
 import { signIn } from 'next-auth/react';
 
-const LoginBtn = () => {
+const LoginButton = () => {
   return (
     // callbackUrl은 로그인 이후 리다이렉트할 URL을 지정
     <button
@@ -12,4 +12,4 @@ const LoginBtn = () => {
     </button>
   );
 };
-export default LoginBtn;
+export default LoginButton;
