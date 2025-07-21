@@ -1,3 +1,5 @@
+'use client';
+
 import { useContext } from 'react';
 import { ModalRegistry } from './modal.types';
 import { ModalContext, ModalContextType } from './modal.context';

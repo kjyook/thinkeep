@@ -26,14 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ModalProvider
-        registry={ModalRegistry}
-        defaultOverlayOptions={{ default: { closeDelay: 500 } }}
-      >
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ModalProvider
+          registry={ModalRegistry}
+          defaultOverlayOptions={{ default: { closeDelay: 500 } }}
+        >
           {children}
-        </body>
-      </ModalProvider>
+        </ModalProvider>
+      </body>
     </html>
   );
 }
