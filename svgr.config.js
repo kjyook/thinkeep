@@ -5,7 +5,7 @@ ${interfaces}
 
 type svgIconProps = SVGProps<SVGSVGElement> & {
   width: number | string;
-  heigth: number | string;
+  height: number | string;
   viewBox?: viewBoxSize;
   fill?: string;
 };

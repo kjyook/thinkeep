@@ -2,10 +2,10 @@ import * as React from 'react';
 import type { SVGProps } from 'react';
 import { viewBoxSize } from '../svg-icon.types';
 type svgIconProps = SVGProps<SVGSVGElement> & {
-  width: number | string,
-  heigth: number | string,
-  viewBox?: viewBoxSize,
-  fill?: string,
+  width: number | string;
+  height: number | string;
+  viewBox?: viewBoxSize;
+  fill?: string;
 };
 export const SvgFaceMad = ({
   width,

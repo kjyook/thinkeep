@@ -17,6 +17,8 @@ const output = `// This file is auto-generated
 export const SVGIconRegistry = {
 ${entries.join(',\n')}
 }
+
+export type IconRegistryKey = keyof typeof SVGIconRegistry;
 `;
 
 fs.writeFileSync(registryPath, output);
