@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import AuthSessionProvider from '@/components/SessionProvider';
+import AuthSessionProvider from '@/components/ui/provider/session-provider';
 import './globals.css';
 import { ModalProvider } from '@/components/ui/modal/modal.context';
 import { ModalRegistry } from '@/components/ui/modal/modal-registry';
@@ -33,7 +33,7 @@ export default function RootLayout({
             registry={ModalRegistry}
             defaultOverlayOptions={{ default: { closeDelay: 500 } }}
           >
-          {children}
+            {children}
           </ModalProvider>
         </AuthSessionProvider>
       </body>

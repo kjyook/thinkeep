@@ -1,9 +1,9 @@
 'use client';
-import LoginButton from '@/components/LoginButton';
+import LoginButton from '@/components/ui/login/login-button';
 import React from 'react';
 import { useSession } from 'next-auth/react';
 
-export default function LoginPage() {
+const LoginPage = () => {
   const { data, status } = useSession();
   return (
     <div>
@@ -14,4 +14,5 @@ export default function LoginPage() {
       <LoginButton />
     </div>
   );
-}
+};
+export default LoginPage;

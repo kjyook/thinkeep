@@ -1,4 +1,5 @@
-import NextAuth from 'next-auth';
+import NextAuth, { Session } from 'next-auth';
+import { JWT } from 'next-auth/jwt';
 import kakaoProvider from 'next-auth/providers/kakao';
 
 const handler = NextAuth({
@@ -17,6 +18,12 @@ const handler = NextAuth({
         token.accessToken = account.access_token;
       }
       return token;
+    },
+    async session({ session, token }: { session: Session; token: JWT }) {
+      if (token && session.user) {
+        session.user.id = token.sub as string;
+      }
+      return session;
     },
   },
 });
