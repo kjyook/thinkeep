@@ -1,12 +1,7 @@
 import * as React from 'react';
 import type { SVGProps } from 'react';
-import { viewBoxSize } from '../svg-icon.types';
-type svgIconProps = SVGProps<SVGSVGElement> & {
-  width: number | string;
-  height: number | string;
-  viewBox?: viewBoxSize;
-  fill?: string;
-};
+import { svgIconProps } from '../svg-icon.types';
+
 export const SvgFaceGlad = ({
   width,
   height,
@@ -14,16 +9,18 @@ export const SvgFaceGlad = ({
   fill = 'none',
   ...props
 }: svgIconProps) => {
+  if (fill !== 'none') fill = 'fill-' + fill;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      fill={fill}
       viewBox={viewBox}
+      fill="none"
       {...props}
     >
-      <rect width={88} height={88} fill="#FFF782" rx={44} />
+      <rect width={88} height={88} fill="#FFF782" rx={44} className={fill} />
       <path
         stroke="#2D2D29"
         strokeLinecap="round"
