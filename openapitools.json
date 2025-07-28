@@ -1,7 +1,14 @@
 {
-  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "$schema": "./.vscode/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "7.14.0"
+    "version": "7.14.0",
+    "generators": {
+      "v3.0": {
+        "generatorName": "typescript-axios",
+        "output": "./src/lib",
+        "glob": "./src/utils/thinkeep-api.yaml"
+      }
+    }
   }
 }
