@@ -3,9 +3,12 @@
   "spaces": 2,
   "generator-cli": {
     "version": "7.14.0",
-    "generatorName": "typescript-axios",
-    "inputSpec": "./src/utils/thinkeep-api.yaml",
-    "output": "./src/lib",
-    "glob": false
+    "generators": {
+      "v1.0": {
+        "generatorName": "typescript-axios",
+        "inputSpec": "./src/utils/thinkeep-api.yaml",
+        "output": "./src/lib/api/v1.0"
+      }
+    }
   }
 }

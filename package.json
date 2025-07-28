@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "openapi": "openapi-generator-cli generate --additional-properties=supportsES6=true,useSingleRequestParameter=true",
+    "openapi": "openapi-generator-cli generate",
     "svg": "yarn run svg:build && yarn run svg:clean && yarn run svg:registry",
     "svg:build": "yarn svgr public/icon --out-dir src/components/ui/svg-icon/templates --typescript",
     "svg:clean": "yarn rimraf public/icon/*.svg",
