@@ -48,7 +48,6 @@ graph TD;
   /hooks              // 커스텀 훅
   /utils              // 공통 유틸 함수
   /types              // 전역 타입 정의
-  /styles             // 전역 스타일 (Tailwind, SCSS 등)
   /lib                // 외부 API, 데이터 처리 모듈
 /public               // 정적 파일
 ```
