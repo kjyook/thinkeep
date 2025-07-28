@@ -40,7 +40,6 @@ graph TD;
     /ui              // 공통 UI 요소 (Button 등)
       /Button.tsx
     /layout             // Header, Footer, Sidebar 등
-    /svg-icon           // svgr로 변환된 아이콘들
     /form               // Input, Select, FormField 등
     /sections           // 특정 페이지용 섹션 조각들 (예: Hero, FAQSection)
     /page               // page 전용 (특정 page.tsx에서만 쓰는 컴포넌트)
@@ -62,6 +61,7 @@ graph TD;
 - **컴포넌트명**: PascalCase (`function UserCard()`)
 - **Props 인터페이스명**: `컴포넌트명Props` (`UserCardProps`)
 - **기능 단위로 폴더로 묶기**
+
   ```bash
   /user-card
     user-card.tsx
@@ -78,6 +78,7 @@ graph TD;
 - **탭 너비**: 2 spaces
 - **문자열**: 따옴표는 `'single quotes'`
 - **import 순서**:
+
   ```
   1. 외부 라이브러리
   2. 절대경로 import (@로 시작 등)
