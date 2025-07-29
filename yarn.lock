@@ -2351,7 +2351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.11.0":
+"axios@npm:1.11.0, axios@npm:^1.11.0":
   version: 1.11.0
   resolution: "axios@npm:1.11.0"
   dependencies:
@@ -7113,6 +7113,7 @@ __metadata:
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
     "@yarnpkg/pnpify": "npm:^4.1.5"
+    axios: "npm:^1.11.0"
     eslint: "npm:^9"
     eslint-config-next: "npm:15.4.1"
     next: "npm:15.4.1"
