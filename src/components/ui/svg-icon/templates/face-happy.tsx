@@ -1,12 +1,6 @@
 import * as React from 'react';
-import type { SVGProps } from 'react';
-import { viewBoxSize } from '../svg-icon.types';
-type svgIconProps = SVGProps<SVGSVGElement> & {
-  width: number | string;
-  height: number | string;
-  viewBox?: viewBoxSize;
-  fill?: string;
-};
+import { svgIconProps } from '../svg-icon.types';
+
 export const SvgFaceHappy = ({
   width,
   height,
@@ -14,16 +8,17 @@ export const SvgFaceHappy = ({
   fill = 'none',
   ...props
 }: svgIconProps) => {
+  if (fill !== 'none') fill = 'fill-' + fill;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      fill={fill}
       viewBox={viewBox}
       {...props}
     >
-      <rect width={87} height={87} fill="#FFF782" rx={43.5} />
+      <rect width={87} height={87} fill="#FFF782" rx={43.5} className={fill} />
       <ellipse cx={17.5} cy={41.5} fill="#FF7C68" rx={9.5} ry={8.5} />
       <ellipse cx={59.5} cy={53.5} fill="#FF7C68" rx={9.5} ry={8.5} />
       <path

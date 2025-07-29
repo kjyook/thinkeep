@@ -1,5 +1,5 @@
 'use client';
-import LoginButton from '@/components/ui/login/login-button';
+import LoginButton from '@/components/page/login/login-button';
 import React from 'react';
 import { useSession } from 'next-auth/react';
 

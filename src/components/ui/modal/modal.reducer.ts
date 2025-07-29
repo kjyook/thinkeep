@@ -8,7 +8,7 @@ import {
   OpenModalPayloadWithId,
   OverlayOptions,
 } from './modal.types';
-import { getRandomHex } from '@/utils';
+import { getRandomHex } from '@/utils/number';
 
 export const ACTION_TYPE_MODAL_CLOSE = 'CLOSE';
 export const ACTION_TYPE_MODAL_OPEN = 'OPEN';

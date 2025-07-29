@@ -1,14 +1,8 @@
 const template = ({ componentName, jsx, imports, interfaces, exports }, { tpl }) => tpl`
 ${imports}
-import { viewBoxSize } from '../svg-icon.types'
+import { svgIconProps } from '../svg-icon.types'
 ${interfaces}
 
-type svgIconProps = SVGProps<SVGSVGElement> & {
-  width: number | string;
-  height: number | string;
-  viewBox?: viewBoxSize;
-  fill?: string;
-};
 
 export const ${componentName} = ({
   width,
