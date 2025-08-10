@@ -1,12 +1,6 @@
 import * as React from 'react';
-import type { SVGProps } from 'react';
-import { viewBoxSize } from '../svg-icon.types';
-type svgIconProps = SVGProps<SVGSVGElement> & {
-  width: number | string;
-  height: number | string;
-  viewBox?: viewBoxSize;
-  fill?: string;
-};
+import { svgIconProps } from '../svg-icon.types';
+
 export const SvgFaceSoso = ({
   width,
   height,
@@ -14,16 +8,18 @@ export const SvgFaceSoso = ({
   fill = 'none',
   ...props
 }: svgIconProps) => {
+  if (fill !== 'none') fill = 'fill-' + fill;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      fill={fill}
       viewBox={viewBox}
+      fill='none'
       {...props}
     >
-      <rect width={87} height={87} fill="#FFF782" rx={43.5} />
+      <rect width={87} height={87} fill="#FFF782" rx={43.5} className={fill} />
       <ellipse cx={29.5} cy={33} fill="#2D2D29" rx={3.5} ry={4} />
       <ellipse cx={43.5} cy={33} fill="#2D2D29" rx={3.5} ry={4} />
       <path
