@@ -16,6 +16,7 @@ export const SvgFaceMelancholy = ({
       width={width}
       height={height}
       viewBox={viewBox}
+      fill='none'
       {...props}
     >
       <rect width={87} height={87} fill="#FAFAF8" rx={43.5} className={fill} />

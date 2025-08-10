@@ -1,1 +1,1 @@
-export { default as MicButton } from './mic-button';
+export { default as FaceNothing } from './face-nothing';

@@ -1581,6 +1581,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dom-speech-recognition@npm:*":
+  version: 0.0.6
+  resolution: "@types/dom-speech-recognition@npm:0.0.6"
+  checksum: 10c0/2483e59689b62c5be1d5da5168ee49be933d91e6866d5f60978b31aaf1f254d921c67f4c795c14a90442b0f86d51496cec88d26c810cf6e3124db1880f798c13
+  languageName: node
+  linkType: hard
+
 "@types/emscripten@npm:^1.39.6":
   version: 1.40.1
   resolution: "@types/emscripten@npm:1.40.1"
@@ -1649,6 +1656,15 @@ __metadata:
   peerDependencies:
     "@types/react": ^19.0.0
   checksum: 10c0/7ba74eee2919e3f225e898b65fdaa16e54952aaf9e3472a080ddc82ca54585e46e60b3c52018d21d4b7053f09d27b8293e9f468b85f9932ff452cd290cc131e8
+  languageName: node
+  linkType: hard
+
+"@types/react-speech-recognition@npm:^3.9.6":
+  version: 3.9.6
+  resolution: "@types/react-speech-recognition@npm:3.9.6"
+  dependencies:
+    "@types/dom-speech-recognition": "npm:*"
+  checksum: 10c0/d39d3fc44f2c5314f6d24864f7d8197271f6529640a46e33965c32ffd4aaba66359d4205a52960a675a07078c6b08ff479fc71ea208c22ec3262230b5fcc4dd6
   languageName: node
   linkType: hard
 
@@ -5161,6 +5177,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.debounce@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "lodash.debounce@npm:4.0.8"
+  checksum: 10c0/762998a63e095412b6099b8290903e0a8ddcb353ac6e2e0f2d7e7d03abd4275fe3c689d88960eb90b0dde4f177554d51a690f22a343932ecbc50a5d111849987
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -6279,6 +6302,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-speech-recognition@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "react-speech-recognition@npm:4.0.1"
+  dependencies:
+    lodash.debounce: "npm:^4.0.8"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 10c0/26c90913b34858aefae60df387d49c80556f52430bf61c3aa7f703794139a969b66fd4e8ba11c805dee0dfeff775eb085e2dcf7a0f46f45809d3a770c92171e4
+  languageName: node
+  linkType: hard
+
 "react@npm:19.1.0":
   version: 19.1.0
   resolution: "react@npm:19.1.0"
@@ -7128,6 +7162,7 @@ __metadata:
     "@types/node": "npm:^24.1.0"
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
+    "@types/react-speech-recognition": "npm:^3.9.6"
     "@yarnpkg/pnpify": "npm:^4.1.5"
     axios: "npm:^1.11.0"
     eslint: "npm:^9"
@@ -7138,6 +7173,7 @@ __metadata:
     prettier: "npm:^3.6.2"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
+    react-speech-recognition: "npm:^4.0.1"
     rimraf: "npm:^6.0.1"
     tailwindcss: "npm:^4"
     ts-node: "npm:^10.9.2"

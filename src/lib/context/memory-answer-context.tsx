@@ -2,16 +2,16 @@
 
 import React, { createContext, useContext, useState } from 'react';
 
-interface Answers {
-  q1: string;
+export interface Answers {
+  q1: 'FaceNothing' | 'FaceHappy' | 'FaceGlad' | 'FaceSoso' | 'FaceMelancholy' | 'FaceSad' | 'FaceMad';
   q2: string;
   q3: string;
   q4: string;
-  state: 1 | 2 | 3 | 4;
+  state: 1 | 2 | 3 | 4 | 5; // current question state
 }
 
 const defaultAnswers: Answers = {
-  q1: '',
+  q1: 'FaceNothing',
   q2: '',
   q3: '',
   q4: '',

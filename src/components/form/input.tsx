@@ -21,9 +21,12 @@ const Input = ({ placeholder }: InputProps) => {
         value={answers[key]}
         onChange={(e) => setAnswers((prev) => ({ ...prev, [key]: e.target.value }))}
         className="
+        body1
         w-full h-[10rem] p-4 rounded-2xl bg-background 
-        break-words overflow-auto resize-none text-white text-lg 
-        placeholder-gray2 placeholder:text-lg"
+        break-words overflow-auto resize-none text-white
+        placeholder-gray2 placeholder:text-xl placeholder:font-semibold
+        placeholder:leading-6
+        "
       />
     );
   }

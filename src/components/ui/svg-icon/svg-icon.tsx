@@ -23,10 +23,7 @@ const placeHolder = ({ width, height }: { width: string | number; height: string
     _height = height as string;
   }
 
-  _width = 'w-[' + _width + ']';
-  _height = 'h-[' + _height + ']';
-
-  return <div className={`${_width} ${_height}`}></div>;
+  return <div style={{ width: _width, height: _height }}></div>;
 };
 
 export const SVGIcon = ({

@@ -16,6 +16,7 @@ export const SvgFaceSoso = ({
       width={width}
       height={height}
       viewBox={viewBox}
+      fill='none'
       {...props}
     >
       <rect width={87} height={87} fill="#FFF782" rx={43.5} className={fill} />

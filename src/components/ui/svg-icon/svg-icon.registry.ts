@@ -6,6 +6,7 @@ export const SVGIconRegistry = {
   FaceHappy: () => import('./templates/face-happy'),
   FaceMad: () => import('./templates/face-mad'),
   FaceMelancholy: () => import('./templates/face-melancholy'),
+  FaceNothing: () => import('./templates/face-nothing'),
   FaceSad: () => import('./templates/face-sad'),
   FaceSoso: () => import('./templates/face-soso'),
   MicButton: () => import('./templates/mic-button')
